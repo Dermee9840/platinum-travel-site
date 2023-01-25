@@ -18,7 +18,6 @@ class StickyHeader {
     window.addEventListener(
       "resize",
       debounce(() => {
-        console.log("Browser-ийг resize хийгдлээ.");
         this.browserHeight = window.innerHeight;
       }, 333)
     );
