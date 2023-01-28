@@ -1,4 +1,4 @@
-import { Axios } from "axios";
+import Axios from "axios";
 
 class ClientArea {
   constructor() {
@@ -26,7 +26,7 @@ class ClientArea {
         this.contentArea.innerHTML = response.data;
       })
       .catch(() => {
-        this.contentArea.innerHTML = `<p class="client-area__error">Таны оруулсан нууц үг буруу байнав Дахин оролдоно уу</p>`;
+        this.contentArea.innerHTML = `<p class="client-area__error">Таны оруулсан нууц үг буруу байна. Дахин оролдоно уу!</p>`;
         this.field.value = "";
         this.field.focus();
       });
@@ -37,7 +37,7 @@ class ClientArea {
       "beforeend",
       `
     <div class="client-area">
-    <div class="wrapper wrapper-medium">
+    <div class="wrapper wrapper--medium">
       <h2 class="section-title section-title--blue">
         Хэрэглэгчийн тусгай хуудас
       </h2>
