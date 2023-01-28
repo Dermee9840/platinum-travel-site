@@ -26,7 +26,7 @@ class ClientArea {
         this.contentArea.innerHTML = response.data;
       })
       .catch(() => {
-        this.contentArea.innerHTML = `<p class="client-area__error>Таны оруулсан нууц үг буруу байна. Дахин оролдоно уу!</p>`;
+        this.contentArea.innerHTML = `<p class="client-area__error">Таны оруулсан нууц үг буруу байна. Дахин оролдоно уу!</p>`;
         this.field.value = "";
         this.field.focus();
       });
